@@ -1,0 +1,131 @@
+/* start Global rules */
+@import url(//db.onlinewebfonts.com/c/fd1ad3a0f95210975d2f5607501020b5?family=Norse);
+body { 
+  margin: 0px;
+  padding: 0px; 
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+div { 
+  margin: 0px;
+  padding: 0px;
+}
+ul { 
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+/* End Global rules */
+/* Start main */
+main { 
+  display: flex;
+}
+main .image { 
+  height: 100vh;
+  flex-basis: 30%;
+  background-image: url("./martin-katler-94lAQc7ipNg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main .image .logo { 
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  padding: 0 20px;
+  top: 100px;
+  left: 0;
+  color: white;
+  width: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  font-family: Norse,sans-serif;
+}
+main .image .logo img {
+  width: 60px;
+}
+main .image .logo h1 { 
+  font-size: 3rem;
+}
+main header {
+  padding: 50px 0 0 20px;
+}
+main .content { 
+  flex-basis: 70%;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+main .content .box form {
+  padding:  20px 40px;  
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(51, 51, 51, 0.185);
+}
+main .content .box .input-container{
+  display: flex;
+  row-gap: 30px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+main .content .box li { 
+  margin-right: 100px;
+  flex-basis: 30%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+main  .content label { 
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+main .content  input { 
+  min-height: 30px;
+  padding: 0 10px ;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: block;
+}
+main .content input:focus { 
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: 5px 5px 6px rgba(19, 18, 18, 0.09);
+}
+main .content  input:invalid { 
+  border: 1px solid red;
+  position: relative;
+  display: block;
+}
+main  input::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  z-index: 1;
+ }
+main .content .box label { 
+  display: block;
+}
+
+main .content h3 { 
+  margin-top: 0;
+  max-width: 500px;
+}
+main .foot {
+  margin-top: 30px;
+  padding: 0 40px;
+}
+main .foot button { 
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 4px 6px 6px #33333330;
+  background-color: #ca6a00;
+  border: none;
+}
+main .foot span { 
+  color: #ca6a00;
+}
+/* End main */
